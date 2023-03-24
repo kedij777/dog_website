@@ -1,0 +1,35 @@
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -300px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+}
+.skip a:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+    z-index: 1;
+}
+
+main {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+header{
+    background-color: gray;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .header_nav li{
+    display: flex;
+    justify-content: flex-end;
+}
