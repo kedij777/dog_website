@@ -28,8 +28,3 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
-header nav .header_nav li{
-    display: flex;
-    justify-content: flex-end;
-}
