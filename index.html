@@ -13,8 +13,23 @@
         <a href="#content_main" >Skip to Content</a>
     </div>
     <header>
-        <nav>
-            <ul class = "header_nav">
+        <nav class = "header_nav_mobile">
+                <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+                <h1>Pawsome <br/> Doggo</h1>
+            <div class="dropdown">
+                <button onclick="menuDrop()" class="dropbtn">Menu▼</button>
+                <div id="dropDownContent" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="breeds.html">Dog Breeds</a>
+                    <a href="random_facts.html">Random Dog Facts</a>
+                    <a href="movies_anime.html">Movies and Anime with Dogs</a>
+                </div>
+            </div>
+        </nav>
+        <nav class = "header_nav_pc">
+            <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+            <h1>Pawsome Doggo</h1>
+            <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -32,11 +47,12 @@
     </header>
     <main>   
         <div class = "content" id="content_main">
-            <img src="images/home_pc.jpeg" alt="Dog created using Adobe Illustrator">
+            <img src="images/PC_home.jpg" alt="Dog created using Adobe Illustrator" id = "PC_home">
             <h1>Home page</h1>
             <p>main Content</p>
-            <img src="images/home_phone.jpeg" alt="cute puffy dog looking up">
+            <img src="images/home_phone.jpeg" alt="cute puffy dog looking up" id = "Mobile_home">
         </div>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>

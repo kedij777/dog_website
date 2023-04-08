@@ -1,3 +1,6 @@
+/* For Mobile Mode, Home page */
+
+/* For skip to content */
 .skip a{
     background: white;
     left: 0;
@@ -13,18 +16,92 @@
     text-decoration-style: solid;
     z-index: 1;
 }
+/* For Header */
+.header_nav_mobile{
+    background-color: yellowgreen;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    width: auto\9;
+    height: 60px;
+    display: inline-flex;
+}
+.header_nav_pc{
+    display:none;
+}
+/* for Button */
+.dropbtn {
+    background-color: #3498DB;
+    font-family: 'Palatino', Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+  }
 
+  .header_nav_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-right: 30px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+#logo{
+    max-height: 100%;
+    justify-content: start;
+}
+
+h1{
+    margin: 5px;
+    font-family: 'Palatino', Georgia, 'Times New Roman', Times, serif;
+    font-size:large;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+/* For background */
+#PC_home{
+    display:none;
+}
+/* body{
+    background-image: url(../images/home_phone.jpeg);
+    
+} */
 main {
     margin-top: 60px;
     margin-bottom: 30px;
 }
-header{
-    background-color: yellowgreen;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-style: bold;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#Mobile_home{
+  max-height:800px;
+  width: auto\9;
+  display:grid;
+  justify-content: center;
 }

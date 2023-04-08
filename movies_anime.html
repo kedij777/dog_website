@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flex-movie.css">
     <title>Movies and Anime with dog</title>
 </head>
 <body>
@@ -12,7 +13,22 @@
         <a href="#content_movie" >Skip to Content</a>
     </div>
     <header>
-        <nav>
+        <nav class = "header_nav_mobile">
+                <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+                <h1>Pawsome <br/> Doggo</h1>
+            <div class="dropdown">
+                <button onclick="menuDrop()" class="dropbtn">Menu▼</button>
+                <div id="dropDownContent" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="breeds.html">Dog Breeds</a>
+                    <a href="random_facts.html">Random Dog Facts</a>
+                    <a href="movies_anime.html">Movies and Anime with Dogs</a>
+                </div>
+            </div>
+        </nav>
+        <nav class = "header_nav_pc">
+            <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+            <h1>Pawsome Doggo</h1>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -27,24 +43,52 @@
                     <a href="movies_anime.html">Movies and Anime with Dogs</a>
                 </li>
             </ul>
-        </nav>  
+        </nav>
     </header>
     <main>
-        <div class="content" id = "content_movie">
-            <h1>Movies/Anime with dog as main character</h1>
-            <img src="images/movie/101dalmatians.webp" alt = "Poster of 101 Dalmatians">
-            <img src="images/movie/A Dog's Journey.jpg" alt = "Poster of A Dog's Journey">
-            <img src="images/movie/benji.jpg" alt = "Poster of benji">
-            <img src="images/movie/bolt.jpg" alt = "Poster of bolt">
-            <img src="images/movie/A Goofy Movie.jpeg" alt = "Poster of A Goofy Movie">
-            <img src="images/movie/Hachi- A Dog's Tale.jpg" alt = "Poster of Hachi- A Dog's Tale">
-            <img src="images/movie/The Secret Lift of pets.jpg" alt = "Poster of The Secret Lift of pets">
-            <img src="images/movie/The Tibetan Dog.jpg" alt = "Poster of the Tibetan Dog">
+        <h2>Movies / Anime with dog as main character</h2>
+        <div class="content" id="content_movie">
+          <div class="movie">
+            <img src="images/movie/101dalmatians.webp" alt="101 Dalmatians">
+            <figcaption>Poster of 101 Dalmatians</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/A Dog's Journey.jpg" alt="A Dog's Journey">
+            <figcaption>Poster of A Dog's Journey</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/benji.jpg" alt="Poster of benji">
+            <figcaption>Benji</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/bolt.jpg" alt="Poster of bolt">
+            <figcaption>Bolt</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/A Goofy Movie.jpeg" alt="Poster of A Goofy Movie">
+            <figcaption>A Goofy Movie</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/Hachi- A Dog's Tale.jpg" alt="Poster of Hachi- A Dog's Tale">
+            <figcaption>Poster of Hachi - A Dog's Tale</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/The Secret Lift of pets.jpg" alt="Poster of The Secret Lift of pets">
+            <figcaption>The Secret Lift of pets</figcaption>
+          </div>
+          <div class="movie">
+            <img src="images/movie/The Tibetan Dog.jpg" alt="Poster of the Tibetan Dog">
+            <figcaption>The Tibetan Dog</figcaption>
+          </div>
+          <div class="movie">
             <img src="images/movie/lady and the tramp.webp" alt="Poster of lady and the tramp">
+            <figcaption>Lady and the Tramp</figcaption>
+          </div>
         </div>
-    </main>
+      </main>
+      
     
-    
+    <script src="js/index.js"></script>
     
 </body>
 </html>

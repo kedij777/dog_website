@@ -1,0 +1,30 @@
+h2{
+    margin: 40px;
+    font-family: font-family: 'Palatino', Georgia, 'Times New Roman';
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+#content_breed{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 15px;
+    text-align:center;
+}
+#content_breed img{
+    width: 90%;
+    height: 90%;
+    border: solid #000000 5px;
+    display:grid;
+   
+}
+#content_breed figcaption{
+    font-family: quasimoda-2,  'Palatino', Georgia, 'Times New Roman';
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+ }
+

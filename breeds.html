@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid-breeds.css">
     <title>Identify Dog Breeds</title>
 </head>
 <body>
@@ -13,7 +14,22 @@
         <a href="#content_breed" >Skip to Content</a>
     </div>
     <header>
-        <nav>
+        <nav class = "header_nav_mobile">
+                <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+                <h1>Pawsome <br/> Doggo</h1>
+            <div class="dropdown">
+                <button onclick="menuDrop()" class="dropbtn">Menu▼</button>
+                <div id="dropDownContent" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="breeds.html">Dog Breeds</a>
+                    <a href="random_facts.html">Random Dog Facts</a>
+                    <a href="movies_anime.html">Movies and Anime with Dogs</a>
+                </div>
+            </div>
+        </nav>
+        <nav class = "header_nav_pc">
+            <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+            <h1>Pawsome Doggo</h1>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -30,16 +46,28 @@
             </ul>
         </nav>
     </header>
+    <h2>Do you know about us?</h2>
     <div class="content" id = "content_breed">
        <img src="images/breeds/beagle.jpeg" alt="Young beagle standing on rock"> 
+       <figcaption>Beagle</figcaption>
+       <!--  I'm a friendly and curious Beagle, known for my adorable floppy ears and excellent sense of smell. -->
        <img src="images/breeds/boston-terrier.jpeg" alt="Boston Terrier standing on grass"> 
+       <figcaption>Boston Terrier</figcaption>
        <img src="images/breeds/chihuahua.jpeg" alt="Cute chihuahua sticking its tongue">
+       <figcaption>Chihuahua</figcaption>
        <img src="images/breeds/bulldog.webp" alt="Bulldog standing on grass">
+       <figcaption>Bulldog</figcaption>
        <img src="images/breeds/corgi.jpeg" alt="corgi on grass"> 
+       <figcaption>Corgi</figcaption>
        <img src="images/breeds/dachshund.jpeg" alt="black dachshund on slope"> 
+       <figcaption>Dachshund</figcaption>
        <img src="images/breeds/Pomeranian.jpeg" alt="cute Pomeranian running on fall leaves"> 
-       <img src="images/breeds/Poodle.jpeg" alt="stylish Poodle on beach">
+       <figcaption>Pomeranian</figcaption>
        <img src="images/breeds/Yorkshire Terrier.jpeg" alt="Yorkshire Terrier sitting on grass">
+       <figcaption>Yorkshire</figcaption>
+       <img src="images/breeds/Poodle.jpeg" alt="stylish Poodle on beach">
+       <figcaption>Poodle</figcaption>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
