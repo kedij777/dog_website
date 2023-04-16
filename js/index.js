@@ -5,16 +5,19 @@ function menuDrop() {
     document.getElementById("dropDownContent").classList.toggle("show");
 }
 
-  // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementById("dropDownContent");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
+// Get the current URL path
+var url = window.location.pathname;
+
+// Get all the menu items in the navigation bar
+var menuItems = document.querySelectorAll('.header_nav_pc a');
+
+// Loop through each menu item and check if its href matches the current URL path
+menuItems.forEach(function(menuItem) {
+  if ("/" + menuItem.getAttribute('href') === url) {
+    console.log(menuItem);
+    // If the href matches, add the active class to the menu item
+    menuItem.classList.add('active');
   }
+});
+
+  
