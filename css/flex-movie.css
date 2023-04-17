@@ -1,9 +1,9 @@
 h2{
-    margin: 40px;
-    font-family: 'Palatino', Georgia, 'Times New Roman';
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
+  margin: 40px;
+  font-family: 'Palatino', Georgia, 'Times New Roman';
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
 }
 
 main {
@@ -23,6 +23,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    position:relative;
   }
   
   .movie img {
@@ -40,3 +41,36 @@ main {
     margin-top:15px;
   }
   
+  .movie > .overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .movie:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    padding: 7px;
+    color: white;
+    font-family: 'Palatino', Georgia, 'Times New Roman';
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .movie:focus .overlay {
+    opacity: 1;
+  }

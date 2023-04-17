@@ -30,14 +30,14 @@
 }
 /* for Button */
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #3183b9;
     font-family: 'Palatino', Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 16px;
-    font-size: 16px;
-    border: none;
+    font-size: 19px;
+    font-weight: bolder;
+    border-radius: 10px;
     cursor: pointer;
-    margin-top:15px;
     margin-right: 30px;
   }
 
@@ -140,8 +140,7 @@ h1{
   }
   .nav_link:hover{
     font-weight: bolder;
-    color: #2980B9
-    ;
+    color: #f9d949;
     
   }
   .active {
@@ -152,7 +151,7 @@ h1{
   }
   .nav_link:focus{
     font-weight: bolder;
-    color: #2980B9
+    color: #f9d949
     ;
   }
   .nav_link{
@@ -176,3 +175,4 @@ h1{
   }
 
 }
+
