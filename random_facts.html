@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/rd_fact.css">
     <title>Random Dog Facts</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     </div>
     <header>
         <nav class = "header_nav_mobile">
-                <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+                <img src="images/logo.png" alt="Logo of dog palm" class = "logo">
                 <h1>Pawsome <br/> Doggo</h1>
             <div class="dropdown">
                 <button onclick="menuDrop()" class="dropbtn">Menu▼</button>
@@ -28,7 +29,7 @@
             </div>
         </nav>
         <nav class = "header_nav_pc">
-            <img src="images/logo.png" alt="Logo of dog palm" id = "logo">
+            <img src="images/logo.png" alt="Logo of dog palm" class = "logo">
             <h1>Pawsome Doggo</h1>
             <ul>
                 <li>
@@ -48,12 +49,13 @@
     </header>
     <main>
         <div class="content" id ="content_Rand">
-            <h1>This is main content of random dog fact page.</h1> 
-            <p>main content</p>
-            <img src="images/random_fact.jpeg" alt="dog shaking its head hardly">
-
+            <h2>Want to learn some fun fact about us?</h2>
+            <button onclick="rd_fact()">Yes!</button>
+            <img src="images/random_fact.jpeg" alt="dog shaking its head hardly" id="shake_head">
+            <img src="images/funny-hipster-cute-dog-art-illustration-anthropomorphic-dogs_739548-732.avif" alt="funny hipster cute dog art illustration anthropomorphic dogsy" id="hipster">
         </div>
     </main>
     <script src="js/index.js"></script>
+    <script src="js/rd_fact.js"></script>
 </body>
 </html>
