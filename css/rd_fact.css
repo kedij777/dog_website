@@ -11,20 +11,20 @@
   
   /* style for the header */
   h2 {
-    margin: 40px;
+    margin: 20px;
     font-family: 'Palatino', Georgia, 'Times New Roman';
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
   }
   
   /* style for the button */
   #yes_bt {
-    font-size: 1.5rem;
+    font-size: 15px;
     background-color: #3498DB;
     color: #fff;
     border: none;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.3rem;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 1rem;
@@ -49,7 +49,8 @@
   .img_rd {
     width: 100%;
     max-width: 600px;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    align-items: center;
   }
   
   /* style for the dynamically generated facts */
@@ -63,4 +64,34 @@
     text-align: left;
     color: #333;
   }
-  
+  @media screen and (min-width:600px) {
+    h2{
+      margin: 40px;
+      font-size: 50px;
+    }
+    #yes_bt{
+      padding: 1rem 2rem;
+      font-size: 30px;
+    }
+    .img_rd{
+      margin-left: auto;
+      margin-right:auto;
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (min-width:1000px) {
+    #dynamic{
+      display: flex;
+    }
+    #dynamic_facts{
+      display: flex;
+      border: none;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: stretch;
+      padding-left: 20px;
+      font-size:large;
+      font-weight:bold;
+    }
+  }

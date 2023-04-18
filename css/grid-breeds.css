@@ -24,10 +24,12 @@ h2{
     display:none;
  }
  img:hover{
+    border: 10px rgb(168, 116, 48) solid;
     transform: rotateY(180deg);
  }
- img:focus{
-    transform: rotateX(180deg);
+ #content_breed img:focus{
+    border: 10px rgb(168, 116, 48) solid;
+    transform: rotateY(180deg);
  }
  @media screen and (min-width:800px) {
     #content_breed{

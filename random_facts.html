@@ -51,8 +51,13 @@
         <div class="content" id ="content_Rand">
             <h2>Want to learn some fun fact about us?</h2>
             <button onclick="rd_fact()" id="yes_bt">Yes!</button>
-            <img src="images/random_fact.jpeg" alt="dog shaking its head hardly" id="shake_head">
-            <img src="images/funny-hipster-cute-dog-art-illustration-anthropomorphic-dogs_739548-732.avif" alt="funny hipster cute dog art illustration anthropomorphic dogsy" id="hipster">
+            <div class="dynamic" id ="dynamic">
+                <div class="dynamic_generated_img" id = "dynamic_img">
+                    <img src="images/random_fact.jpeg" alt="dog shaking its head hardly" id="shake_head">
+                    <img src="images/funny-hipster-cute-dog-art-illustration-anthropomorphic-dogs_739548-732.avif" alt="funny hipster cute dog art illustration anthropomorphic dogsy" id="hipster">
+                </div>
+                <div class="dynamic_generated_facts" id="dynamic_facts"></div>
+            </div>
         </div>
     </main>
     <script src="js/index.js"></script>

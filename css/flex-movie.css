@@ -28,7 +28,7 @@ main {
   
   .movie img {
     width: 250px;
-    height: auto;
+    height: 375px;
   }
   
   .movie figcaption {

@@ -53,7 +53,7 @@ function rd_fact(){
           let p = document.createElement('p');
           let textNode = document.createTextNode(factWithNum);
           p.appendChild(textNode);
-          document.getElementById('content_Rand').appendChild(p);
+          document.getElementById('dynamic_facts').appendChild(p);
           count += 1;
         }
       })

@@ -30,7 +30,7 @@
 }
 /* for Button */
 .dropbtn {
-    background-color: #3183b9;
+    background-color: rgb(168, 116, 48);
     font-family: 'Palatino', Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 16px;
@@ -113,6 +113,9 @@ h1{
 @media screen and (min-width:600px){
   #extend_bg_home_mobile{
     display:none;
+  }
+  h1{
+    font-size: x-large;
   }
 }
 
