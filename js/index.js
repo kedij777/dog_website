@@ -6,7 +6,7 @@ function menuDrop() {
 }
 
 // Get the current URL path
-var url = window.location.pathname;
+var url = window.location.href;
 // Get all the menu items in the navigation bar
 var menuItems = document.querySelectorAll('.header_nav_pc a');
 
