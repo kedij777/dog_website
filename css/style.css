@@ -1,5 +1,10 @@
 /* For Mobile Mode, Home page */
-
+.active_mobile {
+  font-weight: bolder;
+  border-radius: 5px;
+  border: solid black;
+  padding: 10px;
+}
 /* For skip to content */
 .skip a{
     background: white;

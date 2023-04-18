@@ -18,11 +18,8 @@ h2{
     width: 90%;
     height: 90%;
     border: solid #000000 5px;
-    display:grid; 
 }
- figcaption{
-    display:none;
- }
+
  img:hover{
     border: 10px rgb(168, 116, 48) solid;
     transform: rotateY(180deg);
@@ -31,20 +28,20 @@ h2{
     border: 10px rgb(168, 116, 48) solid;
     transform: rotateY(180deg);
  }
+ figcaption{
+    font-family: quasimoda-2,  'Palatino', Georgia, 'Times New Roman';
+    display:block;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: large;
+    background-color: #f9d949;
+    border: 5px black solid;
+    padding: 10px;
+    max-height: 80%
+}
  @media screen and (min-width:800px) {
     #content_breed{
         grid-template-columns: repeat(2, 25%);
-    }
-    figcaption{
-        font-family: quasimoda-2,  'Palatino', Georgia, 'Times New Roman';
-        display:block;
-        line-height: 1.5;
-        font-weight: bold;
-        font-size: large;
-        background-color: #f9d949;
-        border: 5px black solid;
-        padding: 10px;
-        max-height: 80%
     }
 
  }

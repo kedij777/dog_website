@@ -12,6 +12,7 @@ var url = window.location.pathname;
 var menuItems = document.querySelectorAll('.header_nav_pc a');
 
 // Loop through each menu item and check if its href matches the current URL path
+
 menuItems.forEach(function(menuItem) {
   if ("/" + menuItem.getAttribute('href') === url) {
     console.log(menuItem);
@@ -20,4 +21,13 @@ menuItems.forEach(function(menuItem) {
   }
 });
 
-  
+// do the same thing for mobile mode
+
+var menuItemsMobile = document.querySelectorAll('#dropDownContent a'); 
+menuItemsMobile.forEach(function(menuItem) {
+  if ("/" + menuItem.getAttribute('href') === url) {
+    console.log(menuItem);
+    // If the href matches, add the active class to the menu item
+    menuItem.classList.add('active_mobile');
+  }
+});
