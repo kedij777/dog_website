@@ -7,7 +7,7 @@ function menuDrop() {
 
 // Get the current URL path
 var url = window.location.href;
-var rootUrl = ''https://kedij777.github.io/dog_website/';
+var rootUrl = 'https://kedij777.github.io/dog_website/';
 // Get all the menu items in the navigation bar
 var menuItems = document.querySelectorAll('.header_nav_pc a');
 
